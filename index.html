@@ -3,14 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Koh Samui Vacation Homes • Invest + Enjoy</title>
-  <meta name="description" content="Discover Koh Samui vacation homes—earn income from rentals while enjoying Thailand’s premier island retreat." />
+  <title>Koh Samui Vacation Homes • Luxury Rentals & Investments</title>
+  <meta name="description" content="Discover Koh Samui vacation homes—own a retreat and earn rental income on Thailand’s premier island." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://kohsamuivacation.homes/" />
+  <link rel="preconnect" href="https://kohsamui.investments">
+  <link rel="dns-prefetch" href="https://kohsamui.investments">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Koh Samui Vacation Homes • Invest + Enjoy" />
-  <meta property="og:description" content="Explore vacation homes in Koh Samui: beachfront, hillside, and resort villas. Learn how to invest safely." />
+  <meta property="og:title" content="Koh Samui Vacation Homes • Luxury Rentals & Investments" />
+  <meta property="og:description" content="Explore beachfront and hillside vacation homes in Koh Samui. Own a retreat, earn rental income, and invest safely." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop" />
   <meta property="og:url" content="https://kohsamuivacation.homes" />
@@ -58,20 +60,46 @@
     <div class="badge">KohSamuiVacation<span style="opacity:.7">.homes</span></div>
 
     <div class="card" role="region" aria-label="Samui vacation homes intro">
-      <h1>Vacation Homes in Koh Samui</h1>
-      <p>Samui is Southeast Asia’s rising luxury escape—combining island lifestyle with proven rental income. Vacation homes here double as private retreats and cash-flowing investments.</p>
-      <p style="opacity:.9">Share your budget and goals—we’ll connect you with vetted projects and homes tailored for both holidays and returns.</p>
+      <h1>Own a Vacation Home in Koh Samui</h1>
+      <p>Thailand’s premier island retreat offers the best of both worlds: a private holiday home and a rental income generator. Beachfront and hillside villas are in high demand.</p>
+      <p style="opacity:.9">Tell us your budget and timeline—we’ll connect you privately with vetted projects and homes tailored for lifestyle and returns.</p>
+
       <a class="cta" href="https://kohsamui.investments/?utm_source=kohsamuivacation.homes&utm_medium=referral&utm_campaign=cta">
-  Learn more &nbsp;→
-</a>
+        Browse vacation homes &nbsp;→
+      </a>
+      <p style="font-size:13px;opacity:.85;margin-top:10px">Private intake • No spam • Expert-vetted opportunities</p>
+
+      <p style="margin-top:10px">
+        <a class="cta" style="background:transparent;border-color:rgba(255,255,255,.35)"
+           href="https://kohsamui.investments/guide.html?utm_source=kohsamuivacation.homes&utm_medium=referral&utm_campaign=soft">
+          Preview vacation buyer’s guide &nbsp;→
+        </a>
+      </p>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function(){
+          const cta = document.querySelector('.cta');
+          if(!cta) return;
+          cta.addEventListener('click', function(){
+            try {
+              gtag('event', 'cta_click', {
+                event_category: 'engagement',
+                event_label: 'kohsamuivacation.homes_primary',
+                value: 1
+              });
+            } catch(e){}
+          });
+        });
+      </script>
     </div>
 
     <div class="foot">
-  Private intake • No spam • HTTPS secure
-  <div style="font-size:11px;opacity:.6;margin-top:4px">
-    <a href="/faq" style="color:#aaa;text-decoration:none">FAQ</a> • 
-    <a href="/guide" style="color:#aaa;text-decoration:none">Guide</a>
+      Private intake • No spam • HTTPS secure
+      <div style="font-size:11px;opacity:.6;margin-top:4px">
+        <a href="/faq" style="color:#aaa;text-decoration:none">FAQ</a> • 
+        <a href="/guide" style="color:#aaa;text-decoration:none">Guide</a>
+      </div>
+    </div>
   </div>
-</div>
 </body>
 </html>
